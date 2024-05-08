@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSnake", "DotSnake\DotSnake.csproj", "{5B8C12F5-ACEF-4A08-B474-27D23D4F6E7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleSnake", "ConsoleSnake\ConsoleSnake.csproj", "{6EBCFBBF-52B8-4B73-BE75-EE13291F3DAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "model", "model\model.csproj", "{3368AA9D-FADA-4A97-A33F-9B9573B7F016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B8C12F5-ACEF-4A08-B474-27D23D4F6E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8C12F5-ACEF-4A08-B474-27D23D4F6E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8C12F5-ACEF-4A08-B474-27D23D4F6E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8C12F5-ACEF-4A08-B474-27D23D4F6E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBCFBBF-52B8-4B73-BE75-EE13291F3DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBCFBBF-52B8-4B73-BE75-EE13291F3DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBCFBBF-52B8-4B73-BE75-EE13291F3DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBCFBBF-52B8-4B73-BE75-EE13291F3DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3368AA9D-FADA-4A97-A33F-9B9573B7F016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3368AA9D-FADA-4A97-A33F-9B9573B7F016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3368AA9D-FADA-4A97-A33F-9B9573B7F016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3368AA9D-FADA-4A97-A33F-9B9573B7F016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C52070CE-EE01-4687-8197-C14D89BB3607}
+	EndGlobalSection
+EndGlobal
