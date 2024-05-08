@@ -11,7 +11,7 @@ namespace model
         private Case[][] map;
         public Case[][] Map { get => map; set => map = value; }
         private const int SIZE = 15; // L x H
-        private List<IObject> snake;
+        private List<Case> snake;
 
         public Game()
         {
@@ -35,7 +35,7 @@ namespace model
                 // Ligne
                 for (int j = 0; j < SIZE; j++)
                 {
-                    this.map[i][j] = new Case();
+                    this.map[i][j] = new Case(i,j);
                 }
             }
         }
@@ -47,12 +47,12 @@ namespace model
         {
             // On initie le snake
             int startLenght = 3;
-            this.snake = new List<IObject>();
+            this.snake = new List<Case>();
             for (int i = 0; i < startLenght; i++)
             {
-                Coordinate co = new Coordinate(y + i, x); // Créer le serpent selon les coordonées de base donnée
-                BodySnake bs = new BodySnake(co);
-                this.snake.Add(bs);
+                Case c = new Case(y + i, x);
+                c.Item = TypeObject.SNAKE_BODY;
+                this.snake.Add(c);
             }
         }
 
@@ -61,10 +61,9 @@ namespace model
         /// </summary>
         private void SendSnakeToMap()
         {
-            foreach(BodySnake obj in this.snake)
+            foreach(Case obj in this.snake)
             {
-                Coordinate co = obj.Coordonnee;
-                this.map[co.Y][co.X].Item = obj;
+                this.map[obj.Coordinate.Y][obj.Coordinate.X].Item = obj.Item;
             }
         }
     }

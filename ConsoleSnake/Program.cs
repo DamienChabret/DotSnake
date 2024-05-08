@@ -17,7 +17,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 for (int j = 0; j < map[i].Length; j++)
                 {
                     string objetOrNot = " 0 ";
-                    if (map[i][j].Item != null)
+                    if (map[i][j].Item != TypeObject.NO_OBJECT)
                     {
                         objetOrNot  = " 1 ";
                     }
